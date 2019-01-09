@@ -8,7 +8,7 @@ It then retrieves the title and comments of those subreddits.
 To be able to run this scraper please first **register a Reddit API**. This takes no more than 5 minutes and is free.
 In order to do so, do the following steps:
 1. login to your reddit account
-2. go to: https://www.reddit.com/prefs/apps an register your application 
+2. go to: https://www.reddit.com/prefs/apps and register your application 
 3. note down the client_id (14 character string) and the client_secret
 
 # Get it running
