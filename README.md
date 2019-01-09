@@ -11,6 +11,9 @@ In order to do so, do the following steps:
 2. go to: https://www.reddit.com/prefs/apps and register your application 
 3. note down the client_id (14 character string) and the client_secret
 
+Now make sure you have all the necessary Python packages installed. This can be done conveniently via pip, which if not yet done, can be installed via sudo apt install python-pip.\
+Next find the path you installed the Scraper to and add it to the following command : **pip install -r /PathToDirectory/ScraperforReddit/requirements.txt** which, when executed will install all necessary dependencies.
+
 # Get it running
 After having registered an Reddit API (see Introduction above): 
 1. open **settings.py** of this directory and fill in:
