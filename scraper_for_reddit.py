@@ -25,7 +25,7 @@ pipelineclass = getattr(__import__('pipelines', fromlist=[setting['pipelines']])
 
 # Please specify which strings to look for and what to use as the user agent.
 strings_to_scrape = ["let me find this"]
-user_agent = "my user agent"
+user_agent = "Sentiment_news v0.1"
 
 def ScraperForReddit(Institutions, useragent=user_agent, lmt=10, sort="new"):
     try:
@@ -39,8 +39,6 @@ def ScraperForReddit(Institutions, useragent=user_agent, lmt=10, sort="new"):
         logging.info(inst)
         for i in all.search(inst, limit=lmt, sort=sort):
             submission = reddit.submission(i.id)
-            print(submission.title)
-            print(submission.id)
             dataline = getAll(reddit, i.id, inst)
             pipe.process_data(dataline)
 
